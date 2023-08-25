@@ -1,0 +1,102 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+body {
+    background-color: #683FBF;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'Press Start';
+    src: url(fonts/PressStart2P-Regular.ttf);
+}
+
+ul#jogadorEscolha li a:hover, 
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado {
+    opacity: 1;
+}
+
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a {
+    opacity: 0.2;
+    transition: ease-in-out 0.2s;
+}
+
+#titulo, #mensagem {
+    text-align: center;
+}
+
+#placar {
+    display: flex;
+    justify-content: space-around;
+}
+
+#jogadorEscolha, #computadorEscolha {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+img {
+    height: 200px;
+}
+
+#versus {
+    margin-top: 150px;
+    font: 400 30px 'Press Start', sans-serif;
+    color: #2C2C2C;
+}
+
+#principal {
+    margin: 120px;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: #B0BFC6;
+    box-shadow: 0px 15px 0px 0px #78939Ae6 inset;
+    border: 40px solid #344942;
+}
+
+#titulo {
+    font: 400 35px 'Press Start', sans-serif;
+    color: #2C2C2C;
+}
+
+.caixa {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#computador, #jogador {
+    margin-top: 30px;
+}
+
+#jogadorNome, #jogadorPontos, #computadorNome, #computadorPontos {
+    font: 400 18px 'Press Start', sans-serif;
+    color: #2C2C2C;
+}
+
+#computador .caixa {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#mensagem {
+    margin-top: 20px;
+    font: 400 18px 'Press Start', sans-serif;
+    color: #2C2C2C;
+}
