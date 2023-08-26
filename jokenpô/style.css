@@ -100,3 +100,7 @@ img {
     font: 400 18px 'Press Start', sans-serif;
     color: #2C2C2C;
 }
+
+#jogadorEscolha1, #jogadorEscolha2, #jogadorEscolha3 {
+    cursor: pointer;
+}
